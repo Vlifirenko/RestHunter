@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="#89c192"
+        android:id="@+id/content_frame">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#dcdcdf"
+                android:paddingLeft="27dp"
+                android:paddingRight="27dp"
+                android:paddingBottom="10dp">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center"
+                    android:layout_marginTop="7dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_back"
+                        android:background="@drawable/btn_back"
+                        android:layout_gravity="center_vertical" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/main_logo"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_gravity="center_horizontal" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                    android:text="@string/your_profile"
+                    android:id="@+id/textView5"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:background="#da7047"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:text="@string/your_info"
+                    android:id="@+id/textView6"
+                    android:layout_marginTop="8dp"
+                    android:textSize="9dp"
+                    android:background="#8b8b66"
+                    android:textColor="#fff"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="76dp"
+                        android:layout_height="fill_parent">
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="80dp"
+                            android:background="#89c192"
+                            android:padding="7dp">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:id="@+id/iv_avatar"
+                                android:src="@drawable/profile_no_photo" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="10dp"
+                            android:text="@string/your_avatar"
+                            android:id="@+id/textView"
+                            android:layout_marginTop="4dp"
+                            android:textSize="9dp"
+                            android:textColor="#fff"
+                            android:background="#da7047"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="26dp"
+                            android:text="nickname"
+                            android:id="@+id/tv_nickname"
+                            android:background="@xml/orange_border"
+                            android:textColor="#d65a63"
+                            android:textSize="15dp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="26dp"
+                            android:text="email"
+                            android:id="@+id/tv_email"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:background="#d65a63"
+                            android:textSize="15dp"
+                            android:textColor="#fff" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="53dp"
+                                android:layout_height="fill_parent"
+                                android:text="@string/your_password"
+                                android:id="@+id/textView2"
+                                android:textSize="9dp"
+                                android:textColor="#d65a63"
+                                android:gravity="center"
+                                android:background="@xml/green_border" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="password"
+                                android:id="@+id/textView3"
+                                android:layout_marginLeft="4dp"
+                                android:gravity="center"
+                                android:background="@xml/orange_border"
+                                android:textColor="#89c192"
+                                android:textSize="15dp"
+                                android:inputType="textPassword" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="4dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="190dp"
+                        android:layout_height="fill_parent"
+                        android:background="@xml/orange_border"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/birthday"
+                            android:id="@+id/textView4"
+                            android:layout_marginRight="4dp"
+                            android:textSize="9dp"
+                            android:textColor="#89c192" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="01. 01. 2001"
+                            android:id="@+id/tv_birthday"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="#d65a63"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#89c192"
+                        android:layout_marginLeft="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/iv_gender"
+                            android:src="@drawable/ic_male"
+                            android:layout_gravity="center" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:text="@string/your_achivments"
+                    android:id="@+id/textView7"
+                    android:layout_marginTop="8dp"
+                    android:textSize="9dp"
+                    android:background="#8b8b66"
+                    android:textColor="#fff"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/ic_achievement"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/ic_achievement"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/ic_achievement"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/ic_achievement"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView6"
+                        android:src="@drawable/ic_achievement"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:text="@string/your_achivments"
+                    android:id="@+id/textView8"
+                    android:layout_marginTop="8dp"
+                    android:textSize="9dp"
+                    android:background="#8b8b66"
+                    android:textColor="#fff"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111" />
+</android.support.v4.widget.DrawerLayout>

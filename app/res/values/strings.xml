@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RestHunter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- StartActivity -->
+    <string name="login_empty">Поле логин не заполнено</string>
+    <string name="login">ЛОГИН</string>
+    <string name="password">ПАРОЛЬ</string>
+    <string name="password_repeat">ПОВТОРИТЬ ПАРОЛЬ</string>
+    <string name="register">РЕГИСТРАЦИЯ</string>
+    <string name="start_register">ЗАРЕГИСТРИРОВАТЬСЯ</string>
+    <string name="password_not_equal">Пароли не соответствуют</string>
+    <string name="password_empty">Поле пароль не заполнено</string>
+
+    <!-- MainActivity -->
+    <string name="events">СОБЫТИЯ</string>
+    <string name="places">МЕСТА</string>
+    <string name="marks">ОТМЕТКИ</string>
+    <string name="tasks">ЗАДАНИЯ</string>
+
+    <!-- ProfileActivity -->
+    <string name="your_profile">ВАШ ПРОФИЛЬ</string>
+    <string name="your_info">ВАШИ ДАННЫЕ</string>
+    <string name="your_avatar">ВАШ АВАТАР</string>
+    <string name="your_nickname">ВАШ НИКНЕЙМ</string>
+    <string name="your_password">ВАШ ПАРОЛЬ</string>
+    <string name="birthday">ДАТА РОЖДЕНИЯ</string>
+    <string name="your_achivments">ВАШИ НАГРАДЫ</string>
+    <string name="your_stat">ВАША СТАТИСТИКА</string>
+
+</resources>

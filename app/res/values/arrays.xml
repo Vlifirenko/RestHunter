@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="left_menu">
+        <item>Главная</item>
+        <item>Профиль</item>
+        <item>Друзья</item>
+        <item>Карта</item>
+        <item>События</item>
+        <item>Места</item>
+        <item>Задания</item>
+        <item>Инвентарь</item>
+        <item>Магазин (Hunting Store)</item>
+        <item>Настройки</item>
+    </string-array>
+</resources>
