@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#89c192"
+    android:id="@+id/content_frame">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#dcdcdf"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:layout_marginTop="7dp">
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/btn_back"
+                android:background="@drawable/btn_back"
+                android:layout_gravity="center_vertical" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_type"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_place_bar" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:padding="7dp"
+                    android:background="#89c192">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/place_bar"
+                        android:id="@+id/tv_type"
+                        android:layout_gravity="center"
+                        android:background="@xml/white_border"
+                        android:textColor="#fff"
+                        android:textSize="10dp"
+                        android:textIsSelectable="true"
+                        android:gravity="center" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+</LinearLayout>

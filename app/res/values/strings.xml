@@ -31,4 +31,7 @@
     <string name="your_achivments">ВАШИ НАГРАДЫ</string>
     <string name="your_stat">ВАША СТАТИСТИКА</string>
 
+    <!-- PlaceInfoActivity -->
+    <string name="place_bar">БАР</string>
+
 </resources>
