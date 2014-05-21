@@ -2,10 +2,13 @@ package resthunter;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
 
 import com.vlifirenko.resthunter.R;
 
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.UiThread;
+import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.sharedpreferences.Pref;
 
 import resthunter.fragment.LoginFragment_;
@@ -18,6 +21,18 @@ public class StartActivity extends FragmentActivity {
 
     @Pref
     Prefs_ prefs;
+
+    @ViewById
+    View progressIndicator;
+
+    public void showProgressIndicator(boolean flag) {
+        progressIndicator.setVisibility(flag ? View.VISIBLE : View.GONE);
+    }
+
+    @UiThread
+    public void holdUser(boolean flag) {
+        showProgressIndicator(flag);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

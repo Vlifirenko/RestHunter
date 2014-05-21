@@ -12,10 +12,12 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
+import org.androidannotations.annotations.rest.RestService;
 import org.androidannotations.annotations.sharedpreferences.Pref;
 
 import resthunter.MainActivity_;
 import resthunter.prefs.Prefs_;
+import resthunter.rest.RestClient;
 
 @EFragment(R.layout.fragment_login)
 public class LoginFragment extends Fragment {
@@ -29,6 +31,9 @@ public class LoginFragment extends Fragment {
 
     @Pref
     Prefs_ prefs;
+
+    @RestService
+    RestClient restClient;
 
     @AfterViews
     void afterViews() {
