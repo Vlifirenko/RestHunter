@@ -16,9 +16,9 @@ public class Place extends Model implements Parcelable {
     public String lng;
     public String phone;
     public String descrpition;
-    public String work_time;
+    public String workTime;
     public String link;
-    public String everage_price;
+    public String avgPrice;
     public String logo;
 
     public Place() {

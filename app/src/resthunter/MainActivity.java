@@ -1,5 +1,6 @@
 package resthunter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.GravityCompat;
@@ -72,6 +73,10 @@ public class MainActivity extends FragmentActivity {
                 switch (position) {
                     case 1:
                         // TODO to profile
+                        break;
+                    case 5:
+                        startActivity(new Intent(MainActivity.this, PlacesActivity_.class));
+                        break;
                     default:
                         break;
                 }
