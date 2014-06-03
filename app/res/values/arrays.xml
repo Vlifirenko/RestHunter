@@ -11,5 +11,15 @@
         <item>Инвентарь</item>
         <item>Магазин (Hunting Store)</item>
         <item>Настройки</item>
+        <item>Выход</item>
     </string-array>
+
+    <string-array name="categories">
+        <item>cat 1</item>
+        <item>cat 2</item>
+        <item>cat 3</item>
+        <item>cat 4</item>
+        <item>cat 5</item>
+    </string-array>
+
 </resources>

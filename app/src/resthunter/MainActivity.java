@@ -21,7 +21,6 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.sharedpreferences.Pref;
 
-import resthunter.fragment.LevelPageFragment_;
 import resthunter.fragment.NewsSliderFragment_;
 import resthunter.prefs.Prefs_;
 
@@ -76,6 +75,9 @@ public class MainActivity extends FragmentActivity {
                         break;
                     case 5:
                         startActivity(new Intent(MainActivity.this, PlacesActivity_.class));
+                        break;
+                    case 10:
+                        android.os.Process.killProcess(android.os.Process.myPid());
                         break;
                     default:
                         break;
