@@ -14,12 +14,18 @@
         <item>Выход</item>
     </string-array>
 
+    <string-array name="kitchens">
+        <item>Европейская</item>
+    </string-array>
+
     <string-array name="categories">
-        <item>cat 1</item>
-        <item>cat 2</item>
-        <item>cat 3</item>
-        <item>cat 4</item>
-        <item>cat 5</item>
+        <item>Ресторан</item>
+        <item>Бар</item>
+        <item>Кафе</item>
+        <item>Суши</item>
+        <item>Пиццерия</item>
+        <item>Кальян</item>
+        <item>Бистро</item>
     </string-array>
 
 </resources>

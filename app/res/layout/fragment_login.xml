@@ -42,18 +42,21 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register"
-            android:id="@+id/btn_register"
-            android:background="@drawable/login_button_register"
+            android:text="@string/enter"
+            android:id="@+id/btn_login"
+            android:visibility="visible"
+            android:background="@drawable/login_button_enter"
             android:textColor="#d65a63"
             android:layout_marginTop="10dp" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="login"
-            android:id="@+id/btn_login"
-            android:visibility="gone" />
+            android:text="@string/register"
+            android:id="@+id/btn_register"
+            android:background="@drawable/login_button_register"
+            android:textColor="#d65a63"
+            android:layout_marginTop="10dp" />
 
         <LinearLayout
             android:orientation="horizontal"

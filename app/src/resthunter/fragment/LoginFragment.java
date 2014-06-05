@@ -42,6 +42,7 @@ public class LoginFragment extends Fragment {
 
     @Click(R.id.btn_login)
     void login() {
+        /*
         if (TextUtils.isEmpty(login.getText())) {
             Toast.makeText(getActivity(), getString(R.string.login_empty), Toast.LENGTH_SHORT).show();
         } else {
@@ -52,7 +53,8 @@ public class LoginFragment extends Fragment {
                     .put(password.getText() != null ? password.getText().toString() : "")
                     .apply();
             // TODO rest login
-        }
+        }*/
+        getActivity().startActivity(new Intent(getActivity(), MainActivity_.class));
     }
 
     @Click(R.id.btn_fb)
@@ -67,7 +69,6 @@ public class LoginFragment extends Fragment {
 
     @Click(R.id.btn_vk)
     void vkontakte() {
-        getActivity().startActivity(new Intent(getActivity(), MainActivity_.class));
         // TODO vk login
     }
 
@@ -78,5 +79,4 @@ public class LoginFragment extends Fragment {
                 .addToBackStack(RegisterFragment_.LOG_TAG)
                 .commit();
     }
-
 }
