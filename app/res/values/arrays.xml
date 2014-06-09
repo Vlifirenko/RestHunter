@@ -16,6 +16,29 @@
 
     <string-array name="kitchens">
         <item>Европейская</item>
+        <item>Итальянская</item>
+        <item>Азиатская</item>
+        <item>Японская</item>
+        <item>Французская</item>
+        <item>Украинская</item>
+        <item>Еврейская</item>
+        <item>Американская</item>
+        <item>Тайская</item>
+        <item>Немецкая</item>
+        <item>Бельгийская</item>
+        <item>Испанская</item>
+        <item>Грузинская</item>
+        <item>Вегетарианская</item>
+        <item>Китайская</item>
+        <item>Бразильская</item>
+        <item>Кубинская</item>
+        <item>Мексиканская</item>
+        <item>Корейская</item>
+        <item>Сирийская</item>
+        <item>Кавказская</item>
+        <item>Вьетнамская</item>
+        <item>Восточная</item>
+        <item>Австралийская</item>
     </string-array>
 
     <string-array name="categories">

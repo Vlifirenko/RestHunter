@@ -5,9 +5,13 @@ package resthunter.content.model;
  */
 public class Category {
 
+    public int id;
     public String name;
+    public int behind;
 
-    public Category(String name) {
+    public Category(int id, String name, int behind) {
+        this.id = id;
         this.name = name;
+        this.behind = behind;
     }
 }

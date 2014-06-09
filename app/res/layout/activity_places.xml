@@ -20,10 +20,54 @@
             android:name="com.google.android.gms.maps.MapFragment" />
 
         <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="225dp"
             android:id="@+id/listView"
-            android:layout_gravity="left|top" />
+            android:layout_gravity="left|bottom"
+            android:layout_margin="13dp"
+            android:dividerHeight="0px"
+            />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp">
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/btn_back"
+                android:background="@drawable/btn_back"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="26dp"
+                android:id="@+id/et_search"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="78dp"
+                android:background="#89c192"
+                android:hint="@string/search_here"
+                android:textColorHint="#fff"
+                android:textSize="15dp"
+                android:paddingLeft="7dp"
+                android:textColor="#fff"
+                android:drawableRight="@drawable/ic_search"
+                android:drawablePadding="5dp"
+                android:singleLine="true" />
+
+            <Spinner
+                android:layout_width="72dp"
+                android:layout_height="26dp"
+                android:id="@+id/sp_kitchens"
+                android:layout_weight="1"
+                android:layout_gravity="right|center_vertical"
+                android:background="#89c192" />
+        </FrameLayout>
 
     </FrameLayout>
 

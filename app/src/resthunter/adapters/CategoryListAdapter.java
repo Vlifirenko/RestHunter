@@ -31,8 +31,8 @@ public class CategoryListAdapter extends BaseAdapter {
 
     @AfterInject
     void initAdapter() {
-        for (String str : context.getResources().getStringArray(R.array.categories)) {
-            categories.add(new Category(str));
+        for (int i = 0; i < context.getResources().getStringArray(R.array.categories).length; i++) {
+            categories.add(new Category(i, context.getResources().getStringArray(R.array.categories)[i], i));
         }
     }
 

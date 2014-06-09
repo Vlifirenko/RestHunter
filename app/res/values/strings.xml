@@ -36,4 +36,9 @@
     <!-- PlaceInfoActivity -->
     <string name="place_bar">БАР</string>
 
+    <!-- PlacesActivity -->
+    <string name="search_here">ИСКАТЬ ЗДЕСЬ</string>
+    <string name="behind">РЯДОМ</string>
+    <string name="behind_not">РЯДОМ НЕТ</string>
+
 </resources>

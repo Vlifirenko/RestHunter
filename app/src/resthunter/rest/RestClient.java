@@ -11,6 +11,10 @@ import org.springframework.http.converter.FormHttpMessageConverter;
 import org.springframework.http.converter.json.GsonHttpMessageConverter;
 import org.springframework.util.MultiValueMap;
 
+import java.util.Objects;
+
+import resthunter.content.rest.LoginResponse;
+import resthunter.content.rest.LogoutResponse;
 import resthunter.content.rest.PlaceListResponse;
 import resthunter.content.rest.PlaceResponse;
 import resthunter.content.rest.UserListResponse;
@@ -53,4 +57,12 @@ public interface RestClient extends RestClientSupport {
     @Get("api/v1/geoplaces?lat={lat}&lng={lng}&radius={radius}")
     @Accept((MediaType.APPLICATION_JSON))
     PlaceListResponse getGeoPlaces(String lat, String lng, String radius);
+
+    @Post("api/v1/login")
+    @Accept((MediaType.APPLICATION_JSON))
+    LoginResponse login(MultiValueMap<String, Object> user);
+
+    @Get("api/site/apilogout?token={token}&key={key}")
+    @Accept((MediaType.APPLICATION_JSON))
+    LogoutResponse logout(String token, String key);
 }

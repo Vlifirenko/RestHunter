@@ -6,9 +6,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-import com.google.android.gms.maps.GoogleMap;
 import com.vlifirenko.resthunter.R;
 
 import org.androidannotations.annotations.AfterViews;
@@ -20,8 +18,8 @@ import org.androidannotations.annotations.ViewById;
 import resthunter.adapters.CategoryListAdapter;
 
 @EActivity(R.layout.activity_places)
-public class PlacesActivity extends FragmentActivity {
-    public static final String LOG_TAG = PlacesActivity.class.getName();
+public class CategoriesActivity extends FragmentActivity {
+    public static final String LOG_TAG = CategoriesActivity.class.getName();
 
     @ViewById(R.id.listView)
     ListView categoryList;
