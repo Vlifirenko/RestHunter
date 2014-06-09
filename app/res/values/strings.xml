@@ -40,5 +40,6 @@
     <string name="search_here">ИСКАТЬ ЗДЕСЬ</string>
     <string name="behind">РЯДОМ</string>
     <string name="behind_not">РЯДОМ НЕТ</string>
+    <string name="m">М</string>
 
 </resources>

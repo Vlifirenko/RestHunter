@@ -12,14 +12,19 @@ public class Place extends Model implements Parcelable {
 
     public String name;
     public String address;
-    public String lat;
-    public String lng;
+    public double lat;
+    public double lng;
     public String phone;
     public String descrpition;
     public String workTime;
     public String link;
     public String avgPrice;
     public String logo;
+    public int distance;
+    public String city;
+    public int likes;
+    public float rating;
+    public int kitchen;
 
     public Place() {
     }

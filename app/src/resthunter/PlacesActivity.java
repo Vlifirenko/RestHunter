@@ -2,19 +2,20 @@ package resthunter;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-import com.google.android.gms.maps.GoogleMap;
 import com.vlifirenko.resthunter.R;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ItemClick;
+import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 
 import resthunter.adapters.CategoryListAdapter;
@@ -22,6 +23,10 @@ import resthunter.adapters.CategoryListAdapter;
 @EActivity(R.layout.activity_places)
 public class PlacesActivity extends FragmentActivity {
     public static final String LOG_TAG = PlacesActivity.class.getName();
+
+    enum Page {SHOW_CATEGORIES, SHOW_PLACES}
+
+    private Page page = Page.SHOW_CATEGORIES;
 
     @ViewById(R.id.listView)
     ListView categoryList;
@@ -58,5 +63,14 @@ public class PlacesActivity extends FragmentActivity {
     @Click(R.id.map)
     void map() {
         //TODO show map
+    }
+
+    @ItemClick
+    void itemClick() {
+        if (page == Page.SHOW_CATEGORIES) {
+            page = Page.SHOW_PLACES;
+        } else {
+
+        }
     }
 }
