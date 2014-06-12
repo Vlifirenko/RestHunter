@@ -36,7 +36,11 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="resthunter.PlacesActivity_"
+            android:name="resthunter.PlacesListActivity_"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="resthunter.CategoriesListActivity_"
             android:screenOrientation="portrait" />
 
         <meta-data

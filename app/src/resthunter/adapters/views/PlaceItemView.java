@@ -5,49 +5,64 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.internal.id;
 import com.vlifirenko.resthunter.R;
 
 import org.androidannotations.annotations.EViewGroup;
 import org.androidannotations.annotations.ViewById;
 
 import resthunter.content.model.Category;
+import resthunter.content.model.Place;
 
 /**
  * Created by blood_000 on 31.05.2014.
  */
-@EViewGroup(R.layout.view_places_category_item)
+@EViewGroup(R.layout.view_place_item)
 public class PlaceItemView extends LinearLayout {
 
-    private static final int[] imgs = {R.drawable.ic_category_restaurant, R.drawable.ic_category_bar,
-            R.drawable.ic_category_cafe, R.drawable.ic_category_sushi, R.drawable.ic_category_pizzeria,
-            R.drawable.ic_category_hookahbar, R.drawable.ic_category_bistro};
-
     private final Context context;
-
-    @ViewById(R.id.img)
-    ImageView img;
 
     @ViewById(R.id.name)
     TextView name;
 
-    @ViewById(R.id.behind)
-    TextView behind;
+    @ViewById(R.id.distance)
+    TextView distance;
 
-    @ViewById(R.id.behind_txt)
-    TextView behindTxt;
+    @ViewById(R.id.address)
+    TextView address;
+
+    @ViewById(R.id.work_time)
+    TextView workTime;
+
+    @ViewById(R.id.avg_price)
+    TextView avgPrice;
+
+    @ViewById(R.id.likes)
+    TextView likes;
+
+    @ViewById(R.id.rating)
+    TextView rating;
+
+    @ViewById(R.id.kitchen)
+    TextView kitchen;
+
+    @ViewById(R.id.img)
+    ImageView img;
 
     public PlaceItemView(Context context) {
         super(context);
         this.context = context;
     }
 
-    public void bind(Category category) {
-        img.setImageResource(imgs[category.id]);
-        name.setText(category.name);
-        behind.setText(String.valueOf(category.behind));
-        if (category.behind > 0)
-            behindTxt.setText(context.getString(R.string.behind));
-        else
-            behindTxt.setText(context.getString(R.string.behind_not));
+    public void bind(Place place) {
+        name.setText(place.name);
+        distance.setText(String.valueOf(place.distance));
+        address.setText(place.address);
+        workTime.setText(place.workTime);
+        avgPrice.setText(place.avgPrice);
+        likes.setText(String.valueOf(place.likes));
+        rating.setText(String.valueOf(place.rating));
+        kitchen.setText(context.getResources().getStringArray(R.array.kitchens)[place.kitchen]);
+        //TODO set img
     }
 }

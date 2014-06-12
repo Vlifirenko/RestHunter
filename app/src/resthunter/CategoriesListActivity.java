@@ -1,8 +1,8 @@
 package resthunter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -15,21 +15,17 @@ import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ItemClick;
-import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 
 import resthunter.adapters.CategoryListAdapter;
+import resthunter.content.model.Category;
 
 @EActivity(R.layout.activity_places)
-public class PlacesActivity extends FragmentActivity {
-    public static final String LOG_TAG = PlacesActivity.class.getName();
-
-    enum Page {SHOW_CATEGORIES, SHOW_PLACES}
-
-    private Page page = Page.SHOW_CATEGORIES;
+public class CategoriesListActivity extends FragmentActivity {
+    public static final String LOG_TAG = CategoriesListActivity.class.getName();
 
     @ViewById(R.id.listView)
-    ListView categoryList;
+    ListView list;
 
     @ViewById(R.id.et_search)
     EditText search;
@@ -49,7 +45,7 @@ public class PlacesActivity extends FragmentActivity {
 
     @AfterViews
     void afterViews() {
-        categoryList.setAdapter(categoryAdapter);
+        list.setAdapter(categoryAdapter);
         kitchenAdapter = ArrayAdapter.createFromResource(this, R.array.kitchens, android.R.layout.simple_spinner_item);
         kitchenAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         kitchens.setAdapter(kitchenAdapter);
@@ -66,11 +62,7 @@ public class PlacesActivity extends FragmentActivity {
     }
 
     @ItemClick
-    void itemClick() {
-        if (page == Page.SHOW_CATEGORIES) {
-            page = Page.SHOW_PLACES;
-        } else {
-
-        }
+    public void listViewItemClicked(Category category) {
+        startActivity(new Intent(this, PlacesListActivity_.class));
     }
 }

@@ -3,7 +3,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingBottom="17dp">
 
 
     <LinearLayout
@@ -44,7 +45,7 @@
                 android:paddingLeft="3dp"
                 android:paddingRight="3dp"
                 android:gravity="center_vertical"
-                android:textSize="12dp" />
+                android:textSize="9dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -53,11 +54,11 @@
                 android:id="@+id/textView"
                 android:layout_marginLeft="4dp"
                 android:background="#da7047"
-                android:textSize="10dp"
+                android:textSize="9dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="3dp"
                 android:paddingRight="3dp"
-                android:textColor="#fff"/>
+                android:textColor="#fff" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -66,6 +67,149 @@
                 android:src="@drawable/arrow_bottom"
                 android:layout_marginLeft="4dp" />
         </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="#89c192"
+        android:layout_marginTop="5dp"
+        android:text="New Text"
+        android:id="@+id/address"
+        android:textSize="10dp"
+        android:paddingLeft="7dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="#fff"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="#89c192"
+            android:padding="7dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/ic_work_time"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/work_time"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="11dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#fff"
+                    android:background="@xml/white_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/ic_avg_price" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/avg_price"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="10dp"
+                    android:textColor="#fff"
+                    android:background="@xml/white_border" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/ic_likes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/likes"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="10dp"
+                    android:background="@xml/white_border"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/rating"
+                    android:layout_marginLeft="4dp"
+                    android:background="@xml/white_border"
+                    android:textSize="10dp"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/kitchen"
+                    android:id="@+id/textView2"
+                    android:textSize="11dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:background="#da7047"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="New Text"
+                    android:id="@+id/kitchen"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:background="@xml/white_border"
+                    android:textSize="8dp"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:id="@+id/img"
+            android:background="#89c192"
+            android:padding="4dp" />
     </LinearLayout>
 
 </LinearLayout>

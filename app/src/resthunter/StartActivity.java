@@ -29,11 +29,6 @@ public class StartActivity extends FragmentActivity {
         progressIndicator.setVisibility(flag ? View.VISIBLE : View.GONE);
     }
 
-    @UiThread
-    public void holdUser(boolean flag) {
-        showProgressIndicator(flag);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,5 +38,10 @@ public class StartActivity extends FragmentActivity {
                 .replace(R.id.container, new LoginFragment_(), LoginFragment_.LOG_TAG)
                 .addToBackStack(LoginFragment_.LOG_TAG)
                 .commitAllowingStateLoss();
+    }
+
+    @UiThread
+    public void holdUser(boolean flag) {
+        showProgressIndicator(flag);
     }
 }

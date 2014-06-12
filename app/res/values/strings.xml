@@ -41,5 +41,6 @@
     <string name="behind">РЯДОМ</string>
     <string name="behind_not">РЯДОМ НЕТ</string>
     <string name="m">М</string>
+    <string name="kitchen">КУХНЯ</string>
 
 </resources>

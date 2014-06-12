@@ -74,7 +74,7 @@ public class MainActivity extends FragmentActivity {
                         // TODO to profile
                         break;
                     case 5:
-                        startActivity(new Intent(MainActivity.this, PlacesActivity_.class));
+                        startActivity(new Intent(MainActivity.this, CategoriesListActivity_.class));
                         break;
                     case 10:
                         android.os.Process.killProcess(android.os.Process.myPid());

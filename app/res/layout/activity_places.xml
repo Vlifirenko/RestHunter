@@ -69,6 +69,20 @@
                 android:background="#89c192" />
         </FrameLayout>
 
+        <FrameLayout
+            android:id="@+id/progressIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCCCCCCC"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </FrameLayout>
+
     </FrameLayout>
 
 </LinearLayout>
